@@ -1,0 +1,1 @@
+from sha_rnn.sha_rnn import EncoderRNN, DecoderRNN
