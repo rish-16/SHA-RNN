@@ -1,8 +1,8 @@
 import torch
-from sha_rnn import EncoderRNN
+from sha_rnn import DecoderRNN
 
-x = torch.rand(10, 128)
-encoder = EncoderRNN(10, 128)
+x = torch.rand(15, 128)
+encoder = DecoderRNN(15, 128)
 hidden = encoder.init_hidden()
 y, hidden = encoder(x, hidden)
 
